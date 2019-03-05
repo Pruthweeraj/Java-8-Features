@@ -16,16 +16,17 @@ public class SortEmployee {
 		employees.add(new Employee("sagar", 142));
 		employees.add(new Employee("kuni", 2));
 		
-		/*
-		 * Collections.sort(employees);
-		 * System.out.println("Shorting according to default Shoting order:" +
-		 * arrayList);
-		 * 
-		 * Collections.sort(arrayList, (i1, i2) -> (i1 > i2) ? -1 : (i1 < i2) ? +1 : 0);
-		 * System.out.println("Shorting according to customized Shoting order:" +
-		 * arrayList);
-		 */
+		System.out.println("Befort sorting :\n" + employees);
+
 		
+		Collections.sort(employees, (e1, e2) -> (e1.geteNo() > e2.geteNo()) ? +1 : (e1.geteNo() < e2.geteNo()) ? -1 : 0);
+		System.out.println("Shorting according to Assending Shoting order:\n" + employees);
+
+		
+		Collections.sort(employees, (e1, e2) -> (e1.geteNo() > e2.geteNo()) ? -1 : (e1.geteNo() < e2.geteNo()) ? +1 : 0);
+		System.out.println("Shorting according to Desending Shoting order:\n" + employees);
+
+	
 	}
 	
 }

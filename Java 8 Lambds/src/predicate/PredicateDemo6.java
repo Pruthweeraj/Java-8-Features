@@ -21,6 +21,6 @@ public class PredicateDemo6 {
 		}
 		System.out.println("Valid strings are:");
 		System.out.println(list);
-		
+		 
 	}
 }
